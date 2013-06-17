@@ -12,6 +12,9 @@ Dependencies
 on debian:
 	apt-get install sox-devel
 
+on fedora:
+	yum install sox-devel
+
 on slackware:
 	# nothing
 
