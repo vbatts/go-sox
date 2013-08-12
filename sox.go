@@ -43,12 +43,13 @@ func FormatFns() (hurr []string) {
 	var format_tabs *C.sox_format_tab_t
 
 	format_tabs = C.sox_get_format_fns()
-  fmt.Printf("%#v\n", format_tabs)
-  fmt.Printf("%#v\n", format_tabs.name)
+	fmt.Printf("%#v\n", format_tabs)
+	fmt.Printf("%#v\n", format_tabs.name)
 
 	return
 }
 
 type FormatTab struct {
-  Name string
-  fn sox_format_fn_t 
+	Name string
+	fn   C.sox_format_fn_t
+}
